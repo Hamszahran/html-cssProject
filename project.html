@@ -1,0 +1,333 @@
+﻿
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        @media all and (orientation:landscape) {
+            #bigcontainer {
+                border: 3px solid orange;
+                width: 1135;
+                height: 645px;
+                border-radius: 50px;
+                text-align: center;
+                margin: auto;
+                box-shadow: rgb(232 115 238)10px 10px 20px;
+                transition: transform 3s;
+              display:flex;
+              justify-content:space-around;
+            }
+
+                #bigcontainer:hover {
+                    transform: skew(5deg);
+                    box-shadow: rgb(57 220 222)10px 10px 20px;
+                }
+
+                #bigcontainer:active {
+                    transform: scale(0.5);
+                    box-shadow: rgb(233 34 34)10px 10px 20px;
+                }
+
+            img {
+                width: 120px;
+                height: 120px;
+                box-shadow: rgb(232 115 238)5px 5px 10px;
+                border: 3px solid blue;
+                transition: transform 3s;
+                display:flex;
+
+               
+            }
+            .rightone , .righttwo, .rightthree, .rightfour{
+                display:flex;
+                flex-direction:column;
+                justify-content:space-around;
+            }
+           
+                img:hover {
+                    transform: scale(1.1);
+                    box-shadow: rgb(192 216 20)10px 10px 20px;
+                }
+
+                img:active {
+                    transform: scale(4);
+                    box-shadow: red 10px 10px 30px;
+                    border: none;
+                }
+
+            #container {
+                border: 3px solid yellow;
+                border-radius: 50px;
+                width: 1130;
+                height: 640px;
+                background: -webkit-radial-gradient(circle,white,#98eed4,#17e5a6);
+                display:flex;
+                flex-direction:row;
+                justify-content:space-around;
+                align-items:center;
+
+            }
+
+                #container:active {
+                    background: -webkit-radial-gradient(circle,white,white,yellow);
+                }
+
+            #leftsection {
+                width: 400px;
+                height: 600px;
+                border: 5px solid black;
+                overflow-y: hidden;
+                overflow-x: scroll;
+                column-count: 3;
+                column-rule: 2px solid red;
+                text-align: center;
+                border-radius: 40px;
+                background: -webkit-radial-gradient(circle,white,#c6d48d,#91bd27);
+           
+            }
+
+            #rightsection {
+                width: 650px;
+                height: 600px;
+                border: 5px solid blue;
+                overflow-y: scroll;
+                overflow-x: hidden;
+                column-rule: 2px solid red;
+                text-align: center;
+                border-radius: 40px;
+                background: -webkit-radial-gradient(circle,white,white,#17e5a6);
+                display:flex;
+                justify-content:space-around;
+
+            }
+
+            #leftsection:active {
+                text-decoration: underline;
+            }
+
+            #rightsection, leftsection :active {
+                overflow-y: visible;
+                overflow-x: visible;
+            }
+
+            mark {
+                background: red;
+            }
+
+                mark:hover {
+                    background: -webkit-linear-gradient(top,red,orange,yellow);
+                }
+
+                mark:hover {
+                    background: #20a3a8;
+                }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        @media all and (orientation:portrait) {
+            #bigcontainer {
+                border: 3px solid orange;
+                width: 600px;
+                height: 700px;
+                border-radius: 50px;
+                text-align: center;
+                margin: auto;
+                box-shadow: rgb(232 115 238)10px 10px 20px;
+                transition: transform 3s;
+                display:flex;
+                justify-content:space-around;
+                align-items:center;
+            }
+
+  
+
+            img {
+                width: 120px;
+                height: 120px;
+                margin: 15px 15px 15px 15px;
+                box-shadow: blue 5px 5px 10px;
+                border: 3px solid blue;
+                transition: transform 3s;
+                transform:rotate(30deg)
+            }
+
+                img:hover {
+                    transform:rotate(-30deg);
+                    transform:scale(1.2);
+                    box-shadow: yellow 10px 10px 20px;
+                    border: 3px double blue;
+                    
+                }
+
+                img:active {
+                    box-shadow: red 10px 10px 20px;
+                    border: 3px dashed blue;
+                }
+
+           #bigcontainer> #container {
+                border: 3px solid yellow;
+                border-radius: 50px;
+                width: 600px;
+                height: 700px;
+                background: -webkit-radial-gradient(circle,white,#98eed4,#17e5a6);
+                display:flex;
+                justify-content:space-around;
+                align-items:center;
+              
+            }
+
+
+           #bigcontainer>#container> #leftsection {
+                width: 220px;
+                height: 600px;
+                border: 5px double #cb2fd8;
+                overflow-y: hidden;
+                overflow-x: scroll;
+                column-count: 3;
+                text-align: center;
+                border-radius: 40px;
+                background: -webkit-radial-gradient(circle,white,#c6d48d,#91bd27);
+                padding:5px;
+            
+            }
+                #leftsection:hover {
+                    column-rule: none;
+              border: 5px double #cb2fd8;
+
+                }
+            #rightsection {
+                width: 300px;
+                height: 600px;
+                border: 5px solid blue;
+                overflow-x: hidden;
+                overflow-y: scroll;
+                border-radius: 40px;
+                background: -webkit-radial-gradient(circle,white,white,#17e5a6);
+                display:flex;
+               flex-direction:column;
+                justify-content:space-between;
+                align-items:center;
+                
+            }
+        
+
+            #leftsection:active {
+                text-decoration: underline;
+            }
+
+       
+
+            mark {
+                background: blue;
+                color: white;
+               
+            }
+
+            
+
+
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="bigcontainer">
+        <div id="container">
+            <section id="leftsection">
+                Lorem Ipsum is simply dummy text printing and typesetting industry.
+                Lorem Ipsum is simply dummy text printing and typesetting industry.
+                Lorem Ipsum is simply dummy text printing and typesetting industry.
+                Lorem Ipsum is simply dummy text printing and typesetting industry.
+                Lorem Ipsum is simply dummy text printing and typesetting industry.
+                Lorem Ipsum is simply dummy text printing and typesetting industry.
+
+                Lorem Ipsum is simply <mark>
+                    dummy text and typesetting industry.
+                    Lorem Ipsum is simply dummy text printing and typesetting industry.
+                    Lorem Ipsum is simply dummy text printing and typesetting industry.
+                    Lorem Ipsum is simply dummy text printing and typesetting industry.
+                    Lorem Ipsum is simply
+                    dummy text printing and typesetting industry.
+                    Lorem Ipsum is simply dummy text printing and typesetting industry.
+                    Lorem Ipsum is simply dummy text printing and
+                </mark> typesetting industry.
+                Lorem Ipsum is simply dummy text printing andtypesetting industry.
+                Lorem Ipsum is simply dummy text printing and typesetting industry.
+                Lorem Ipsum is simply dummy text printing and typesetting industry.
+                Lorem Ipsum is simply dummy text printing and typesetting industry.
+                Lorem Ipsum is simply dummy text printing and typesetting industry.
+                Lorem Ipsum is simply dummy text printing and typesetting industry.
+                Lorem Ipsum is simply dummy text printing and typesetting industry.
+                Lorem Ipsum is simply dummy text printing and typesetting industry.
+                Lorem Ipsum is simply dummy text printing and typesetting industry.
+                Lorem Ipsum is simply dummy text printing and typesetting industry.
+                Lorem Ipsum is simply dummy text printing and typesetting industry.
+                Lorem Ipsum is simply dummy text printing and typesetting industry.
+                Lorem Ipsum is simply dummy text printing and typesetting industry.
+                Lorem Ipsum is simply dummy text printing and typesetting industry.
+                Lorem Ipsum is simply dummy text printing and typesetting industry.
+                Lorem Ipsum is simply dummy text printing and typesetting industry.
+                Lorem Ipsum is simply dummy text printing and typesetting industry.
+                Lorem Ipsum is simply dummy text printing and typesetting industry.
+                Lorem Ipsum is simply dummy text printing and typesetting industry.
+                Lorem Ipsum is simply dummy text printing and typesetting industry.
+                Lorem Ipsum is simply dummy text printing and typesetting industry.
+                Lorem Ipsum is simply dummy text printing and typesetting industry.
+                Lorem Ipsum is simply dummy text printing and typesetting industry.
+                Lorem Ipsum is simply dummy text printing and typesetting industry.
+                Lorem Ipsum is simply dummy text printing and typesetting industry.
+                Lorem Ipsum is simply dummy text printing and typesetting industry.
+                Lorem Ipsum is simply dummy text printing and typesetting industry.
+
+            </section>
+            <section id="rightsection">
+                <div class="rightone">
+                    <img src="https://images.ctfassets.net/6m9bd13t776q/19GP8WmK1mSUM6WOQQAoqQ/ebd631a4f4ee95e6ed28c91019f16f50/rainbow-baby-desktop.jpg?q=75&w=660" />
+                    <img src="https://images.indianexpress.com/2019/07/baby1.jpeg" />
+                    <img src="https://ei.marketwatch.com/Multimedia/2014/04/11/Photos/MG/MW-BZ111_cute_b_20140411074006_MG.jpg?uuid=15c26634-c16e-11e3-9750-00212803fad6" />
+                    <img src="https://ei.marketwatch.com/Multimedia/2014/04/10/Photos/MG/MW-BZ068_baby_t_20140410145311_MG.jpg?uuid=6fa827f2-c0e1-11e3-9750-00212803fad6" />
+                   
+                </div>
+                <div class="righttwo">
+                    <img src="https://images.ctfassets.net/6m9bd13t776q/19GP8WmK1mSUM6WOQQAoqQ/ebd631a4f4ee95e6ed28c91019f16f50/rainbow-baby-desktop.jpg?q=75&w=660" />
+                    <img src="https://ei.marketwatch.com/Multimedia/2014/04/11/Photos/MG/MW-BZ111_cute_b_20140411074006_MG.jpg?uuid=15c26634-c16e-11e3-9750-00212803fad6" />
+                    <img src="https://ei.marketwatch.com/Multimedia/2014/04/10/Photos/MG/MW-BZ068_baby_t_20140410145311_MG.jpg?uuid=6fa827f2-c0e1-11e3-9750-00212803fad6" />
+                    <img src="https://images.indianexpress.com/2019/07/baby1.jpeg" id="image" />
+                    
+                </div>
+                <div class="rightthree">
+                    <img src="https://images.indianexpress.com/2019/07/baby1.jpeg" id="image" />
+                    <img src="https://images.ctfassets.net/6m9bd13t776q/19GP8WmK1mSUM6WOQQAoqQ/ebd631a4f4ee95e6ed28c91019f16f50/rainbow-baby-desktop.jpg?q=75&w=660" "  />
+                    <img src="https://image.freepik.com/free-photo/portrait-young-family_1328-3806.jpg" id="image" />
+                    <img src="https://ei.marketwatch.com/Multimedia/2014/04/11/Photos/MG/MW-BZ111_cute_b_20140411074006_MG.jpg?uuid=15c26634-c16e-11e3-9750-00212803fad6" />
+                    
+                </div>
+                <div class="rightfour">
+                    <img src="https://images.ctfassets.net/6m9bd13t776q/19GP8WmK1mSUM6WOQQAoqQ/ebd631a4f4ee95e6ed28c91019f16f50/rainbow-baby-desktop.jpg?q=75&w=660" />
+                    <img src="https://images.indianexpress.com/2019/07/baby1.jpeg" id="image" />
+                    <img src="https://ei.marketwatch.com/Multimedia/2014/04/11/Photos/MG/MW-BZ111_cute_b_20140411074006_MG.jpg?uuid=15c26634-c16e-11e3-9750-00212803fad6" />
+                    <img src="https://ei.marketwatch.com/Multimedia/2014/04/10/Photos/MG/MW-BZ068_baby_t_20140410145311_MG.jpg?uuid=6fa827f2-c0e1-11e3-9750-00212803fad6" />
+                    
+                </div>
+
+
+            </section>
+        </div>    
+</div>
+    
+</body>
+</html>
